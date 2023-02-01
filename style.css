@@ -1,21 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 * {
   margin: 0 5px;
   padding: 0;
   box-sizing: border-box;
 }
-
 * body {
   font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
   height: 100vh;
 }
-
 * li {
   list-style: none;
 }
-
 * a {
   text-decoration: none;
 }
@@ -32,7 +28,6 @@
   grid-column: 1/5;
   grid-row: 1/2;
 }
-
 .title span {
   color: rgba(139, 137, 137, 0.452);
 }
@@ -51,8 +46,12 @@
   grid-template-rows: repeat(12, auto);
   grid-template-columns: repeat(12, auto);
 }
-
 .navbar .tel {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.navbar .profession {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -62,6 +61,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.contacts span {
+  color: rgba(139, 137, 137, 0.452);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .title__description {
@@ -80,15 +85,6 @@
   grid-column: 4/13;
   justify-content: center;
 }
-
-.social__media .website {
-  margin-right: 260px;
-}
-
-.social__media .github {
-  margin-right: 195px;
-}
-
 .social__media li {
   color: rgba(139, 137, 137, 0.452);
 }
@@ -117,20 +113,17 @@
 .skill__container {
   display: grid;
 }
-
 .skill__container .skills {
   display: grid;
   place-items: center;
   color: rgba(243, 208, 12, 0.863);
   padding: 15px 0 0 0;
 }
-
 .skill__container .programming {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .skill__container .technologies {
   display: flex;
   flex-direction: row;
@@ -141,7 +134,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .experiance__container .experiance {
   display: flex;
   flex-direction: row;
@@ -150,24 +142,20 @@
   color: rgba(243, 208, 12, 0.863);
   padding: 15px 0 0 0;
 }
-
 .experiance__container .work__role {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
 .experiance__container .responsibilities {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 .experiance__container .responsibilities h4 {
   color: rgba(139, 137, 137, 0.452);
 }
-
 .experiance__container .duretion {
   display: flex;
   justify-content: space-between;
@@ -178,4 +166,4 @@
   .social__media {
     display: none;
   }
-}
+}/*# sourceMappingURL=style.css.map */

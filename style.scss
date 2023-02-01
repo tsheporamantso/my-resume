@@ -76,6 +76,10 @@ $bp : (
   & .tel {
     width: max-content;
   }
+
+  & .profession {
+    width: max-content;
+  }
 }
 
 .contacts {
@@ -83,6 +87,14 @@ $bp : (
   flex-direction: row;
   align-items: center;
   // border: 2px solid green;
+
+  & span {
+    color: $color-1;
+    // border: 2px solid red;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
 }
 
 .title__description {
@@ -102,13 +114,13 @@ $bp : (
   justify-content: center;
   // border: 2px solid black;
 
-  & .website {
-    margin-right: 260px;
-  }
+  // & .website {
+  //   margin-right: 260px;
+  // }
 
-  & .github {
-    margin-right: 195px;
-  }
+  // & .github {
+  //   margin-right: 195px;
+  // }
 
   & li {
     color: $color-1;
