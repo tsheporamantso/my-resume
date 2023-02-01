@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-$color-1 : gray;
+$color-1 : rgba(139, 137, 137, 0.452);
+$color-2 : rgba(243, 208, 12, 0.863);
 
 * {
   margin: 0 5px;
@@ -27,6 +28,7 @@ $color-1 : gray;
   flex-direction: column;
   flex-wrap: wrap;
   height: 100vh;
+//   gap: 15px;
   //   border: 2px solid red;
 }
 
@@ -41,8 +43,10 @@ $color-1 : gray;
 }
 
 .line__separator {
+//   border: 2px solid red;  
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 25px;
   height: 20px;
   transform: rotate(90deg);
@@ -69,7 +73,9 @@ $color-1 : gray;
 .title__description {
   grid-row: 5 / 13;
   grid-column: 1 / 13;
-  margin: 10px 0;
+  margin: 15px 0;
+  padding: 0px 10px;
+  text-align: inherit;
 }
 
 .social__media {
@@ -80,11 +86,15 @@ $color-1 : gray;
   grid-column: 4 / 13;
   justify-content: center;
   // border: 2px solid black;
+
+  & li {
+    color: $color-1;
+  }
 }
 
 .edu__title {
   text-align: center;
-  color: $color-1;
+  color: $color-2;
 }
 
 .institution {
@@ -102,3 +112,24 @@ $color-1 : gray;
   flex-direction: row;
   align-items: center;
 }
+
+.skills {
+    text-align: center;
+    color: $color-2;
+}
+
+.skill__container {
+    display: grid;
+
+    & .programming {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    & .technologies {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
