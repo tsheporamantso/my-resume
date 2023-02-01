@@ -3,105 +3,104 @@
 $color-1 : gray;
 
 * {
-    margin: 0px 5px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0 5px;
+  padding: 0;
+  box-sizing: border-box;
 
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-color: whitesmoke;
-        height: 100vh;
-    }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    height: 100vh;
+  }
 
-    li {
-        list-style: none;
-    }
+  li {
+    list-style: none;
+  }
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100vh;
-    border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+//   border: 2px solid red;
 }
 
 .title {
-    font-size: 30px;
-    
-     span {
-        color: $color-1;
-     }
+  font-size: 30px;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+
+  span {
+    color: $color-1;
+  }
 }
 
 .line__separator {
-    display: flex;
-    flex-direction: column;
-    width: 25px;
-    height: 20px;
-    transform: rotate(90deg);
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  height: 20px;
+  transform: rotate(90deg);
 }
 
 .navbar {
-    display: grid;
-    border: 5px solid red;
-    grid-template-rows: repeat(12, auto);
-    grid-template-columns: repeat(12,auto);
+  display: grid;
+  // border: 5px solid red;
+  grid-template-rows: repeat(12, auto);
+  grid-template-columns: repeat(12, auto);
+
+  & .tel {
+    width: max-content;
+  }
 }
 
 .contacts {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    // border: 2px solid green;
-}
-
-.title {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  // border: 2px solid green;
 }
 
 .title__description {
-    grid-row: 4 / 13;
-    grid-column: 1 / 13;
+  grid-row: 5 / 13;
+  grid-column: 1 / 13;
+  margin: 10px 0px;
 }
 
-
 .social__media {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    grid-row: 1 / 4;
-    grid-column: 4 / 13;
-    justify-content: center;
-    // border: 2px solid black;   
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-row: 1 / 5;
+  grid-column: 4 / 13;
+  justify-content: center;
+  // border: 2px solid black;
 }
 
 .edu__title {
-    text-align: center;
-    color: $color-1;
-    
+  text-align: center;
+  color: $color-1;
 }
 
 .institution {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .year {
-   
-    color: $color-1;
-
-  }
+  color: $color-1;
+}
 
 .languages {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
 

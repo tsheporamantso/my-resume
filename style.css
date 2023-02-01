@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
-  margin: 0px 5px;
-  padding: 0px;
+  margin: 0 5px;
+  padding: 0;
   box-sizing: border-box;
 }
 * body {
@@ -21,11 +21,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   height: 100vh;
-  border: 2px solid red;
 }
 
 .title {
   font-size: 30px;
+  grid-column: 1/5;
+  grid-row: 1/2;
 }
 .title span {
   color: gray;
@@ -41,9 +42,13 @@
 
 .navbar {
   display: grid;
-  border: 5px solid red;
   grid-template-rows: repeat(12, auto);
   grid-template-columns: repeat(12, auto);
+}
+.navbar .tel {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .contacts {
@@ -52,21 +57,17 @@
   align-items: center;
 }
 
-.title {
-  grid-column: 1/4;
-  grid-row: 1/2;
-}
-
 .title__description {
-  grid-row: 4/13;
+  grid-row: 5/13;
   grid-column: 1/13;
+  margin: 10px 0px;
 }
 
 .social__media {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  grid-row: 1/4;
+  grid-row: 1/5;
   grid-column: 4/13;
   justify-content: center;
 }
