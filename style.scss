@@ -102,6 +102,14 @@ $bp : (
   justify-content: center;
   // border: 2px solid black;
 
+  & .website {
+    margin-right: 260px;
+  }
+
+  & .github {
+    margin-right: 195px;
+  }
+
   & li {
     color: $color-1;
   }
@@ -165,6 +173,13 @@ $bp : (
     align-items: center;
     color: $color-2;
     padding: 15px 0 0 0;
+  }
+
+  & .work__role {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   & .responsibilities {

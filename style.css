@@ -81,6 +81,14 @@
   justify-content: center;
 }
 
+.social__media .website {
+  margin-right: 260px;
+}
+
+.social__media .github {
+  margin-right: 195px;
+}
+
 .social__media li {
   color: rgba(139, 137, 137, 0.452);
 }
@@ -141,6 +149,13 @@
   align-items: center;
   color: rgba(243, 208, 12, 0.863);
   padding: 15px 0 0 0;
+}
+
+.experiance__container .work__role {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .experiance__container .responsibilities {
