@@ -99,13 +99,14 @@
   align-items: center;
 }
 
-.skills {
-  text-align: center;
-  color: rgba(243, 208, 12, 0.863);
-}
-
 .skill__container {
   display: grid;
+}
+.skill__container .skills {
+  display: grid;
+  place-items: center;
+  color: rgba(243, 208, 12, 0.863);
+  padding: 15px 0 0 0;
 }
 .skill__container .programming {
   display: flex;
@@ -116,4 +117,36 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.experiance__container {
+  display: flex;
+  flex-direction: column;
+}
+.experiance__container .experiance {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgba(243, 208, 12, 0.863);
+  padding: 15px 0 0 0;
+}
+.experiance__container .responsibilities {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.experiance__container .responsibilities h4 {
+  color: rgba(139, 137, 137, 0.452);
+}
+.experiance__container .duretion {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(139, 137, 137, 0.452);
+}
+
+@media (max-width: 487px) {
+  .social__media {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -2,6 +2,21 @@
 
 $color-1 : rgba(139, 137, 137, 0.452);
 $color-2 : rgba(243, 208, 12, 0.863);
+$color-3 : skyblue;
+
+$bp : (
+  mobile : 487px,
+  tablet : 786px,
+  desktop : 1440px,
+);
+
+@mixin query ($screen){
+  @each $key, $values in $bp{
+    @if($screen == $key ){
+      @media (max-width: $values){@content;}
+    }
+  } 
+}
 
 * {
   margin: 0 5px;
@@ -105,7 +120,9 @@ $color-2 : rgba(243, 208, 12, 0.863);
 
 .year {
   color: $color-1;
+
 }
+
 
 .languages {
   display: flex;
@@ -113,23 +130,71 @@ $color-2 : rgba(243, 208, 12, 0.863);
   align-items: center;
 }
 
-.skills {
-    text-align: center;
-    color: $color-2;
-}
-
 .skill__container {
     display: grid;
+    // row-gap: 15px;
 
-    & .programming {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    & .technologies {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        & .skills {
+        // border: 2px solid red;
+        display: grid;
+        place-items: center;
+        color: $color-2;
+        padding: 15px 0 0 0;
+        // margin: 15px 0;
+        
+        }
+
+        & .programming {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        & .technologies {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
     }
 }
+
+.experiance__container {
+    display: flex;
+    flex-direction: column;
+
+   
+    & .experiance {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: $color-2;
+        padding: 15px 0 0 0;
+    }
+
+    & .responsibilities {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & h4 {
+          color: $color-1;
+        }
+    }
+
+    & .duretion {
+      display: flex;
+      justify-content: space-between;
+      color: $color-1;
+    }
+  
+}
+
+@include query(mobile){
+
+.social__media {
+  display: none;
+}
+
+}
+
 
