@@ -7,6 +7,7 @@
 * body {
   font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
+  height: 100vh;
 }
 * li {
   list-style: none;
@@ -38,18 +39,55 @@
   transform: rotate(90deg);
 }
 
+.navbar {
+  display: grid;
+  border: 5px solid red;
+  grid-template-rows: repeat(12, auto);
+  grid-template-columns: repeat(12, auto);
+}
+
 .contacts {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.title__description {
+  grid-row: 4/13;
+  grid-column: 1/13;
 }
 
 .social__media {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-start;
+  grid-row: 1/4;
+  grid-column: 4/13;
+  justify-content: center;
 }
 
 .edu__title {
   text-align: center;
+  color: gray;
+}
+
+.institution {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.year {
+  color: gray;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+$color-1 : gray;
+
 * {
     margin: 0px 5px;
     padding: 0px;
@@ -8,6 +10,7 @@
     body {
         font-family: 'Poppins', sans-serif;
         background-color: whitesmoke;
+        height: 100vh;
     }
 
     li {
@@ -31,7 +34,7 @@
     font-size: 30px;
     
      span {
-        color: gray;
+        color: $color-1;
      }
 }
 
@@ -43,19 +46,62 @@
     transform: rotate(90deg);
 }
 
+.navbar {
+    display: grid;
+    border: 5px solid red;
+    grid-template-rows: repeat(12, auto);
+    grid-template-columns: repeat(12,auto);
+}
+
 .contacts {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    // border: 2px solid green;
 }
+
+.title {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.title__description {
+    grid-row: 4 / 13;
+    grid-column: 1 / 13;
+}
+
 
 .social__media {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-start;   
+    grid-row: 1 / 4;
+    grid-column: 4 / 13;
+    justify-content: center;
+    // border: 2px solid black;   
 }
 
 .edu__title {
     text-align: center;
+    color: $color-1;
     
 }
+
+.institution {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.year {
+   
+    color: $color-1;
+
+  }
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
