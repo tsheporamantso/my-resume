@@ -197,6 +197,21 @@
 /**
 *! Projects Styling
 **/
+.personal__portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal__portfolio .projects {
+  display: grid;
+  place-items: center;
+  color: rgba(243, 208, 12, 0.863);
+  padding: 15px 0 0 0;
+}
+
+.personal__portfolio .title {
+  font-size: 23px;
+}
 
 /**
 *! Media Queries
