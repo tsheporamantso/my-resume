@@ -138,6 +138,7 @@ $bp : (
 
 .year {
   color: $color-1;
+  font-size: 18px;
 }
 
 .languages {
@@ -220,7 +221,6 @@ $bp : (
 .personal__portfolio {
   display: flex;
   flex-direction: column;
-
 
   & .projects {
     display: grid;
