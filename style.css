@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/**
+* ! Default body styles.
+**/
 * {
   margin: 0 5px;
   padding: 0;
@@ -20,6 +23,9 @@
   text-decoration: none;
 }
 
+/**
+* ! Header and Navigation Bar styles
+**/
 .container {
   display: flex;
   flex-direction: column;
@@ -98,6 +104,9 @@
   color: rgba(139, 137, 137, 0.452);
 }
 
+/**
+* ! Education Section Styles.
+**/
 .edu__title {
   text-align: center;
   color: rgba(243, 208, 12, 0.863);
@@ -119,6 +128,9 @@
   align-items: center;
 }
 
+/**
+* ! Skills Section Styles
+**/
 .skill__container {
   display: grid;
 }
@@ -142,6 +154,9 @@
   align-items: center;
 }
 
+/**
+*! Work Experiance styling
+**/
 .experiance__container {
   display: flex;
   flex-direction: column;
@@ -179,6 +194,13 @@
   color: rgba(139, 137, 137, 0.452);
 }
 
+/**
+*! Projects Styling
+**/
+
+/**
+*! Media Queries
+**/
 @media (max-width: 487px) {
   .social__media {
     display: none;

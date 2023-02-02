@@ -18,6 +18,10 @@ $bp : (
   }
 }
 
+/**
+* ! Default body styles.
+**/
+
 * {
   margin: 0 5px;
   padding: 0;
@@ -38,13 +42,15 @@ $bp : (
   }
 }
 
+/**
+* ! Header and Navigation Bar styles
+**/
+
 .container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 100vh;
-  //   gap: 15px;
-  //   border: 2px solid red;
 }
 
 .title {
@@ -58,7 +64,6 @@ $bp : (
 }
 
 .line__separator {
-  //   border: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,11 +91,9 @@ $bp : (
   display: flex;
   flex-direction: row;
   align-items: center;
-  // border: 2px solid green;
 
   & span {
     color: $color-1;
-    // border: 2px solid red;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -112,20 +115,15 @@ $bp : (
   grid-row: 1 / 5;
   grid-column: 4 / 13;
   justify-content: center;
-  // border: 2px solid black;
-
-  // & .website {
-  //   margin-right: 260px;
-  // }
-
-  // & .github {
-  //   margin-right: 195px;
-  // }
 
   & li {
     color: $color-1;
   }
 }
+
+/**
+* ! Education Section Styles.
+**/
 
 .edu__title {
   text-align: center;
@@ -148,17 +146,18 @@ $bp : (
   align-items: center;
 }
 
+/**
+* ! Skills Section Styles
+**/
+
 .skill__container {
   display: grid;
-  // row-gap: 15px;
 
   & .skills {
-    // border: 2px solid red;
     display: grid;
     place-items: center;
     color: $color-2;
     padding: 15px 0 0 0;
-    // margin: 15px 0;
   }
 
   & .programming {
@@ -173,6 +172,10 @@ $bp : (
     align-items: center;
   }
 }
+
+/**
+*! Work Experiance styling
+**/
 
 .experiance__container {
   display: flex;
@@ -211,6 +214,14 @@ $bp : (
   }
 }
 
+/**
+*! Projects Styling
+**/
+
+
+/**
+*! Media Queries
+**/
 @include query(mobile) {
   .social__media {
     display: none;
