@@ -50,7 +50,7 @@ $bp : (
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100vh;
+  height: max-content;
 }
 
 .title {
