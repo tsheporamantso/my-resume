@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/**
+* ! Default body styles.
+**/
+* {
+  margin: 0 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* body {
+  font-family: "Poppins", sans-serif;
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+* li {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+/**
+* ! Header and Navigation Bar styles
+**/
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.title {
+  font-size: 30px;
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+
+.title span {
+  color: rgba(139, 137, 137, 0.452);
+}
+
+.line__separator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25px;
+  height: 20px;
+  transform: rotate(90deg);
+}
+
+.navbar {
+  display: grid;
+  grid-template-rows: repeat(12, auto);
+  grid-template-columns: repeat(12, auto);
+}
+
+.navbar .tel {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.navbar .profession {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacts span {
+  color: rgba(139, 137, 137, 0.452);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title__description {
+  grid-row: 5/13;
+  grid-column: 1/13;
+  margin: 15px 0;
+  padding: 0 10px;
+  text-align: inherit;
+}
+
+.social__media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-row: 1/5;
+  grid-column: 4/13;
+  justify-content: center;
+}
+
+.social__media li {
+  color: rgba(139, 137, 137, 0.452);
+}
+
+/**
+* ! Education Section Styles.
+**/
+.edu__title {
+  text-align: center;
+  color: rgba(243, 208, 12, 0.863);
+}
+
+.institution {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.year {
+  color: rgba(139, 137, 137, 0.452);
+  font-size: 18px;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/**
+* ! Skills Section Styles
+**/
+.skill__container {
+  display: grid;
+}
+
+.skill__container .skills {
+  display: grid;
+  place-items: center;
+  color: rgba(243, 208, 12, 0.863);
+  padding: 15px 0 0 0;
+}
+
+.skill__container .programming {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skill__container .technologies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/**
+*! Work Experiance styling
+**/
+.experiance__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiance__container .experiance {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgba(243, 208, 12, 0.863);
+  padding: 15px 0 0 0;
+}
+
+.experiance__container .work__role {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experiance__container .responsibilities {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.experiance__container .responsibilities h4 {
+  color: rgba(139, 137, 137, 0.452);
+}
+
+.experiance__container .duretion {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(139, 137, 137, 0.452);
+}
+
+/**
+*! Projects Styling
+**/
+.personal__portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal__portfolio .projects {
+  display: grid;
+  place-items: center;
+  color: rgba(243, 208, 12, 0.863);
+  padding: 15px 0 0 0;
+}
+
+.personal__portfolio .title {
+  font-size: 23px;
+}
+
+/**
+*! Media Queries
+**/
+@media (max-width: 487px) {
+  .social__media {
+    display: none;
+  }
+}
